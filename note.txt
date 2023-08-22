@@ -1,1 +1,1 @@
-Next 13, Vercel AI, Upstash Redit & Rate Limit, Pinecone, Langchain
+Next 13, Vercel AI, Upstash Redit & Rate Limit, Pinecone, Langchain, Cloudinary, OpenAI, LLM, Stripe
