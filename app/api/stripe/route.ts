@@ -34,7 +34,7 @@ export async function GET() {
     const stripeSession = await stripe.checkout.sessions.create({
       success_url: settingsUrl,
       cancel_url: settingsUrl,
-      payment_method_types: ["card", "sepa_debit", "ideal"],
+      payment_method_types: ["card"],
       mode: "subscription",
       billing_address_collection: "auto",
       customer_email: user.emailAddresses[0].emailAddress,
@@ -46,7 +46,7 @@ export async function GET() {
               name: "Companion PRO",
               description: "Create Custom AI Companions",
             },
-            unit_amount: 2000,
+            unit_amount: 1999,
             recurring: {
               interval: "month",
             },
